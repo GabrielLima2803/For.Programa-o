@@ -1,0 +1,18 @@
+<meta charset="UFT-8">
+<script>
+    let nomes = ["Alberto", "Maria", "Rafeal", "Eloisa", "João", "Amanda", "Eduardo"];
+    let nomesComecamComA = [];
+    let demaisNomes = [];
+    
+    for(let nome of nomes){
+        nome[0].charAt(0);
+        if ( nome[0].charAt(0) === "A") {
+            nomesComecamComA.push(nome)
+        }
+        else{
+            demaisNomes.push(nome)
+        }
+        
+    }
+    document.write(`Nomes com A: ${nomesComecamComA.join(" | ")} </br> Nomes Demais: ${demaisNomes.join(" | ")}`)
+</script>
