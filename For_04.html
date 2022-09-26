@@ -1,18 +1,20 @@
-<meta charset="UFT-8">
+<meta charset="UTF-8">
 <script>
     let nomes = ["Alberto", "Maria", "Rafeal", "Eloisa", "João", "Amanda", "Eduardo"];
     let nomesComecamComA = [];
     let demaisNomes = [];
-    
+
+    const letra = prompt("Informe qual letra Você irar querer A|M|R|E|J")
+
     for(let nome of nomes){
-        nome[0].charAt(0);
-        if ( nome[0].charAt(0) === "A") {
-            nomesComecamComA.push(nome)
+        let primeiraLeta = nome.charAt(0)
+        if ( primeiraLeta === letra) {
+            nomesComecamComA.push(nome);
         }
         else{
-            demaisNomes.push(nome)
+            demaisNomes.push(nome);
         }
         
     }
-    document.write(`Nomes com A: ${nomesComecamComA.join(" | ")} </br> Nomes Demais: ${demaisNomes.join(" | ")}`)
+    document.write(`Nomes com A: <li>${nomesComecamComA.join(" | ")}</li> </br> Nomes Demais: <li>${demaisNomes.join(" | ")}</li>`);
 </script>
