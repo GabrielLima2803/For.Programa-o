@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+const numeroPrimo = parseInt(prompt("Qual número você deseja válidar se é número primo"));
+let divisivel = 0;
+let resultado;
+    for (let contador = 1; contador <= numeroPrimo ; contador++) {
+        if (numeroPrimo %  contador === 0) {
+            resultado = "Este número não e  e primo"
+            divisivel++
+        }
+
+    }
+    if (divisivel === 2) {
+        document.write(`O número e primo`)
+    }
+    else{
+        document.write(`Num e primo`)
+    }
+</script>
